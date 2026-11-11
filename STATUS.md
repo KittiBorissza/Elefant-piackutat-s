@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Posztpéldák és közzétételi elakadás (2026-11-11)
+
+- A marketingbenchmark immár a Social live read 2026-11-09 Posts részéből megfigyelt posztkártyákat és étteremszűrőt készít. Külön kezeli a reakciót, hozzászólást, megosztást, nem látható adatot; a profillinket nem állítja posztlinknek. Adat- és időkülönbségi figyelmeztetés látható. A Node-teszt a forrássorral, hiánnyal, profillinkkel és üres forrással sikerült. A szűrő böngészőben még teszteletlen.
+- Az éles GitHub Pages ismét ellenőrizve: továbbra is az Újranyitás menüpont és a régi két ajánlatos kezdőszöveg látható, azaz az új commitok nem igazoltan jutottak ki. A build/deploy okát az Actions / Pages felületen kell feltárni. A benchmark kódja a GitHub main ágon van, nem tekinthető ellenőrzött éles funkciónak.
+- Következő: GitHub Pages build / deploy helyreállítása, majd követők, posztszűrő és mobil tesztelése; utána forrásadatok frissessége és review-témák.
+
 ## Marketingbenchmark első lépése (2026-11-11)
 
 - A Marketingbenchmark menüpontban Facebook- és Instagram-követők összehasonlítása öt vizsgált profilra, forrással, dátummal, hiányokkal és az Oliva közös profiljára vonatkozó megjegyzéssel. A korábbi nyitási feladatkártyák helyét a kért benchmark vette át; a nyers forráslapok továbbra is megnyithatók.
