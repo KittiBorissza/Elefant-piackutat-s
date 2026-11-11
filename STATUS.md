@@ -1,5 +1,12 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Verziózott egyfájlos adatcsomag (2026-11-11)
+
+- A 22:16:54-es ellenőrzött export 35 munkalappal és metaadattal a dist/snapshot-20261111-221654.json fájlba került; GitHub blobként visszaolvasva a teljes research megegyezik a staginggel (585 adatfolyam-megfigyelés, 32 ebédmegfigyelés). A fő intel.js egyetlen verziózott fájlt kér le, így ott nem keveredik különböző verziójú research/data2/meta. A csomag nem élő adatkapcsolat.
+- Az import stagingben snapshot-bundle.json fájlt is készít, amelyben a kutatás és metaadat azonos exportból származik. XLSX-teszt, tartalom- és metaadategyezés ellenőrizve. Az új bundle verziózott néven való elhelyezése és intel.js útvonalának módosítása továbbra is kézi; automatizált frissítés nincs.
+- A régi app.js és legacy böngészők külön data0–3 fájlokat olvasnak, amelyek nem lettek frissítve: az egyfájlos védelem csak a fő nézetre vonatkozik. Hibás csomagnál az intel.js a korábbi appra vált, ami régebbi adatokat mutathat. A legacy források összehangolása és a hibaállapot egyértelmű jelzése még szükséges.
+- GitHub Pages ellenőrzéskor még a régi 11:46/12:14 időpontok látszottak: az új publikáció és UI funkciói nem igazoltak. Következő: deploy után 22:16:54 és 35 munkalap ellenőrzése, ebédmenü, vélemények és mobil teszt, utána legacy összehangolása.
+
 ## Teljes munkalap-összevetés (2026-11-11)
 
 - Az 22:16-os staging és a repó research.json mind a 35 lapját összevetettük. 33 közös lap változatlan; a research.json-ba mentett Napi menü árak régebbi (11 sor), de az alkalmazás ezt külön betöltött data2.json-nal felülírja (32 sor); az új exportban 32 sor szerepel. Az új 35. lap: Ebédmenü kutatási brief (15 adatsor).
