@@ -1,5 +1,12 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Friss Sheet-export és ebédadatok összevetése (2026-11-11)
+
+- A Google Sheet friss XLSX-exportja külön stagingbe importálva: 35 lap, 585 adatfolyam-ármegfigyelés; az import ellenőrzései átmentek. A dashboard adatai még nem változtak, az export staging nem tartós repófájl.
+- A repó data2.json és a staging ebédlapja 32-32 azonosítót tartalmaz, nincs hiányzó vagy új sor; az egyetlen nyers különbség NMAR002 szervizdíjas értéke 6094.999999999999 vs 6095, számítási kerekítési eltérés.
+- Új scripts/compare_lunch_snapshot.py: azonosító, fejléc és érdemi mezőeltérések ellenőrzése 0,001 abszolút numerikus toleranciával. A jelenlegi tényleges fájlokon lefutott és egyezést jelzett. Nem ellenőrzi a többi munkalapot, és nem publikál.
+- Következő: a többi kritikus munkalap / azonosító és adatminőség összevetése, majd az összes validált snapshot-fájl együttes Git-commitban történő átvétele és Pages-ellenőrzés. Atomi böngészőoldali frissítés még nem biztosított.
+
 ## Importvédelem: staging (2026-11-11)
 
 - Az import több fájlt ír, ezért fájlonkénti csere nem atomi. Most a script elutasítja a nem üres célkönyvtárat; az éles dist/ közvetlen felülírása emiatt nem működik. Új staging könyvtárral indítható: `python scripts/import_snapshot.py export.xlsx --output /tmp/elefant-staging`. A staging tartalmának validált, egy commitban történő átvétele még külön feladat; nincs automatikus publikálás, teljes atomi adatcsere nem készült el.
