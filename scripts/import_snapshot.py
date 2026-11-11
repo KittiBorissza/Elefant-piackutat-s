@@ -14,8 +14,10 @@ def norm(v):
 def read(name):
  if name not in w:raise ValueError('Hiányzó munkalap: '+name)
  return [[norm(v) for v in row] for row in w[name].iter_rows(values_only=True) if any(v is not None for v in row)]
+# The dashboard reads columns by position: reject any reordered or changed header.
+expected_header=["Rekordazonosító","Helyazonosító","Étterem","Település","Étlapkategória","Fogás neve a forrásban","Összetevők / rövid kivonat","Kiírt bruttó ár (Ft)","Pénznem","Szervizdíj aránya","Szervizdíj kezelése","Szervizdíjjal számítva (Ft)","Árcsatorna","Érvényesség kezdete","Érvényesség vége","Ellenőrzés dátuma","Forrás URL","Allergénkód a forrásban","Adag / méret számszerűen","Áregység","Kapcsolt pizzaár-rekord","Korlát / forrásállapot","Fogáscsoport-ID","Árváltozat","Változat értelmezése","Kanonikus fogás-ID","Stabil változat-ID","Egységes fogáscsalád","Tételtípus","Fő összetevő – kivonat","Köret – kivonat","Szósz – kivonat","Köret az árban","Mennyiség","Mértékegység","Mennyiség mire vonatkozik","Személyek száma","Értékesítési csatorna","Forrásformátum","Forrás-ID","Ár adatminősége","Érvényesség státusza","Összehasonlítás státusza","Kapcsolt alapváltozat-ID","Kínálati összesítés szerepe","Kapcsolt elsődleges rekord-ID","Kódolási státusz"]
 flow=read('Dashboard adatfolyam'); head=flow[0]
-if len(head)!=47 or any(k not in head for k in required):raise ValueError('Az adatfolyam fejléce eltér; import megszakítva')
+if head!=expected_header:raise ValueError('Az adatfolyam oszlopainak neve vagy sorrendje eltér; import megszakítva')
 indices={k:head.index(k) for k in required}; records=flow[1:]
 if not records:raise ValueError('Üres adatfolyam; import megszakítva')
 ids=[]
