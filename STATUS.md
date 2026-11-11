@@ -1,5 +1,12 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Folytatási pont – kiszállítási hibajavítás (2026-11-11)
+
+- A felhasználó képernyőképe alapján a Pages beállítása Deploy from a branch, main és /(root); az első építés folyamatban volt. Az ismételt böngészős ellenőrzésnél az URL továbbra is 404. A beállítás helyessége látható, sikeres publikáció nincs igazolva; a telepítés hibáját vagy folyamatát ellenőrizni kell.
+- A csatornaárak különbsége és százaléka csak két pozitív, numerikus ár esetén számolódik; hiányzó árnál Nem igazolt jelenik meg. A kapacitásfigyelmeztetés nulla kapacitásnál nem ad hamis megnyugtatást.
+- Ellenőrzés: JavaScript-szintaxis és a két összehasonlítás hiányzó/érvényes árakkal, valamint a kapacitásüzenet három helyzetben Node alatt. A módosítás böngészős tesztje és publikációja még hiányzik; az adatok nem frissültek.
+- Következő: GitHub Actions Pages build állapotának tisztázása és működő oldal ellenőrzése, P1 importbiztonság és friss Sheet-snapshot; ezután marketingbenchmark.
+
 ## Folytatási pont – importvédelem (2026-11-11)
 
 - A GitHub Pages várható címe böngészőben 404 (Site not found); a beállítási oldal az aktuális böngészőből nem elérhető, így a Pages konfigurációja nem ellenőrizhető vagy módosítható itt. A GitHub repó publikus és a gyökér index a dist/ könyvtárba mutat.
