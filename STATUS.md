@@ -17,3 +17,10 @@
 - Az ebédmenüben külön két- és háromfogásos, csatorna- és ármód-szűrő, kártyás rangsor és kinyitható részletek működnek. A november 9-i Oliva és Skorpió ajánlatok a korábbi időszakoktól külön, forrásellenőrzést igénylő megfigyelésekként jelennek meg, végösszeg és csatorna igazolása nélkül.
 - Ellenőrizve: asztali előnézet, két- és háromfogásos váltás, árak és hiányzó díjak, forgatókönyv alapértéke, JavaScript szintaxis. Mobil böngészős ellenőrzés még szükséges.
 - Következő: éttermi versenytárskártyák, étlapok részletesebb összehasonlítása, kiszállítási modell javítása, mobilteszt. Az új nyitóoldal korlátozott megfigyeléseket mutat, nem végleges üzleti ajánlásokat.
+
+## 2026-11-11 – versenytárskártyák
+
+- A versenytársak nézet öt előzetes meetingkártyát mutat: Chill, Oliva, Fricska, Gusto 13 és Skorpió. A források szerinti cím, kínálat, dokumentált csatornák, meglévő ebédmenü-megfigyelések, valamint ahol van, becsült gyalogos és légvonalbeli távolság szerepel; a kiválasztás nem végleges.
+- A kinyitható étlap-példák az adatfolyam helyszíni, önálló fogásaiból származnak, forrással és ellenőrzési dátummal. A korábbi nyers távolság-, értékelés-, vélemény- és éttermi adatok megmaradtak.
+- Ellenőrizve: asztali előnézet, öt kártya és a Chill kinyitható ételpéldái. Az útvonal és a régi adatok friss helyszíni ellenőrzése, mobilos teszt még szükséges.
+- Következő: hasonló ételek árbenchmarkja, Wolt- és kapacitásnézet javítása, használható véleménytémák, mobilteszt.
