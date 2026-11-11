@@ -5,11 +5,11 @@ Frissítve: 2026-11-11. A GitHub-repó az elsődleges forrás. A korábbi ChatGP
 ## Állapot és munkarend
 
 - GitHub: https://github.com/KittiBorissza/Elefant-piackutat-s
-- Az ellenőrzött kiinduló main commit: d70a729249efcebcf1de44b334da27893495995f.
+- A terv rögzítésekor a main ágon már szerepelt az ebédmenü-adatok külön frissítése; a legújabb commitot munka előtt mindig olvasd be.
 - A futó kód a dist mappában található. Meglévő: kérdésközpontú áttekintés, ebédmenü-szűrés és kalkulátor, étlapvizualizáció, öt versenytárskártya, csatornaárak és fedezet-, kapacitásmodell, kutatási háttér.
 - Az adatbeolvasás jelenleg kézi XLSX-import; a snapshot metaadata: dist/snapshot-meta.json, az import: scripts/import_snapshot.py. A 2026-11-11 11:46-os pillanatkép 34 lapot és 585 ármegfigyelést rögzített. A számok nem statikus célok.
-- Az aktuális Google Sheet 35 lapot jelez, köztük az Ebédmenü kutatási brief lapot. Ez önmagában nem bizonyítja, hogy minden új kutatási eredmény feldolgozott vagy hogy a GitHub-on megjelenik; a következő frissítés előtt a forrássorokat és verziót ellenőrizni kell.
-- A GitHubon elérhető weblap telepítése nincs igazolva. GitHub Pages / más GitHub-alapú hosting állapotát és konfigurálhatóságát ellenőrizni kell; a régi Site állapota a feladatnak nem része.
+- Az aktuális Google Sheet 35 lapot jelez. Egy párhuzamos munkakör a Napi menü árak lap 32 ármegfigyelését külön frissítette a repóban; a többi kutatási adat korábbi pillanatkép. A további változtatások előtt ellenőrizni kell a friss commitot és a forrássorokat.
+- A gyökér index.html átirányít a dist/ mappába; a GitHubon elérhető weblap telepítése nincs igazolva. GitHub Pages / más GitHub-alapú hosting állapotát és konfigurálhatóságát ellenőrizni kell; a régi Site állapota a feladatnak nem része.
 - A repó nyilvános a tulajdonos kifejezett döntése alapján. Fel kell tüntetni, hogy a benne levő JSON-adatok is nyilvánosak.
 
 Minden szakasz után:
