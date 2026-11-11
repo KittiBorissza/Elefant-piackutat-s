@@ -1,5 +1,10 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Marketing és vélemények – tervezési mérföldkő (2026-11-11)
+
+- A ROADMAP.md P5a szakasza rögzíti a követőszámok, posztpéldák, vendégvélemények és újranyitási marketing felületi tervét és külön megvalósítási lépéseit. Ez terv; az új felületek még nincsenek megvalósítva.
+- A GitHub Pages ellenőrzése és a megbízható adatfrissítés az első; ezek után a követőszámok és posztpéldák a meeting érdekében előrehozhatók. A forrásokat, dátumokat és hiányokat meg kell jeleníteni.
+
 ## Aktuális folytatási pont – GitHub-only (2026-11-11)
 
 - A korábbi ChatGPT Site elhagyott; csak a GitHub repó változik. Részletes, prioritásos terv: ROADMAP.md.
