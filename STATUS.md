@@ -1,5 +1,10 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Marketingbenchmark éles ellenőrzés (2026-11-11)
+
+- A felhasználó képernyőképe szerint a f256672 commit Pages buildje sikerült, deploy akkor még folyamatban volt. Ezután az élő dashboardon megjelent a Marketingbenchmark, mindkét követőlista és a posztpéldák. A Chill étteremre szűrés böngészőben működött, a forráslapok lenyithatók. Mobilnézet és szűrő visszaállítása még ellenőrzendő.
+- Az adatok történeti pillanatképek; az éles Sheet automatikus szinkronja nincs beállítva. Következő: az éles verzió és az ebédkezdő új szövegének ellenőrzése, majd forrással dokumentált vendégvélemények és adatfrissesség.
+
 ## Posztpéldák és közzétételi elakadás (2026-11-11)
 
 - A marketingbenchmark immár a Social live read 2026-11-09 Posts részéből megfigyelt posztkártyákat és étteremszűrőt készít. Külön kezeli a reakciót, hozzászólást, megosztást, nem látható adatot; a profillinket nem állítja posztlinknek. Adat- és időkülönbségi figyelmeztetés látható. A Node-teszt a forrássorral, hiánnyal, profillinkkel és üres forrással sikerült. A szűrő böngészőben még teszteletlen.
