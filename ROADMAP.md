@@ -67,6 +67,51 @@ Minden szakasz után:
 - Marketing és nyitás: séf, étlap, nyitvatartás, Google Cégprofil, heti menü, forgatás és meghívásos tesztvacsora. Felelős, dátum, jóváhagyás csak ha ténylegesen megvan; szerkesztésnél tárolás és megmaradás jelezve.
 - Befejezéskor megbeszélésre nyomtatható döntéslista.
 
+## P5a – Marketing és vendégvélemények: UI-terv [megtervezve, nincs megvalósítva]
+
+### Helye a navigációban
+
+- A jelenlegi, hétpontos főmenüben az „Újranyitás” átnevezhető „Marketing és nyitás”-ra, megtartva a meglévő feladatokat és interakciókat. A menüponton belül két jól látható alfül: **„Mit csinálnak mások?”** és **„Elefánt újranyitása”**. A menü címét mobilon is tesztelni kell; ha nem fér, rövidebb „Marketing” cím megengedett.
+- A vendégvélemények elsődleges helye a **Versenytársak** oldalon az adott étterem kártyája. Egy kapcsolódó **„Mit szeretnek a vendégek?”** összefoglaló a Marketing és nyitás oldalról is elérhető. Közös adatmodellre mutassanak; ugyanazt a véleményt nem tároljuk vagy számoljuk kétszer.
+- Az Áttekintés oldalon legfeljebb egy rövid, forrással, dátummal és korláttal ellátott marketinges megfigyelés vagy az Elefánt kiugró posztja jelenjen meg, **„Megnézem a kommunikációt”** gombbal. A tulajdonosi döntések és ebédmenük továbbra is elsőbbséget kapnak.
+
+### 1. „Mit csinálnak mások?” – követők
+
+- A blokk kérdése: **„Mekkora közönséget építettek a környékbeli helyek?”** Az első nézet két vízszintes, könnyen összehasonlítható lista: Facebook és Instagram, öt vizsgált hely, forrás és megfigyelés dátuma. A listához tartozzon étterem- és platformszűrő, forrásmegnyitás és szűrőtörlés; a részletes elem az éttermi profilra mutasson.
+- A 2026-11-09-i kutatásban rögzített kiinduló számok: Elefánt FB 3 792 / IG 637; Chill FB 6 242 / IG 659; Oliva hotel+étterem FB 10 081 / IG 3 170; Gusto 13 FB 17 173 / IG 2 051; Fricska FB 29 004 / IG nem igazolt. Ezek korábbi megfigyelések és forrásellenőrzést, illetve importfrissítést igényelhetnek, nem beégetendő állandó értékek.
+- A két social lap eltérő pontosságú/kerekített és eltérő módon olvasott értékeket tartalmazhat; a külön nézetek közötti egyezést és megfigyelés körülményeit fel kell tüntetni. Nem olvasható Instagram-szám = „Nem sikerült ellenőrizni”, nem nulla. Az Oliva Facebook-profilja a hotel és az étterem közös oldala. Gusto Delicate és Gusto 13 külön profil, a követők nem adhatók össze.
+- Követőszám nem azonos eléréssel, aktív közönséggel, vendégszámmal vagy hirdetési hatással; értelmező egy mondatot a grafikon mellett kell megjeleníteni. „Ember beszél erről” és „járt már itt” csak részletekben, saját definícióval és dátummal, nem vendég- vagy reachmutatóként.
+
+### 2. Posztpéldák és témák
+
+- **„Miket és hogyan kommunikálnak?”**: étterem és platform szerinti kártyák/lista; témaszűrők: heti menü, étel/fotó, szezonális ajánlat, esemény, nyitvatartás, egyéb, és csak dokumentált posztnál töltsük a címkét.
+- Minden példán dátum vagy az eredeti relatív időmegjelölés a 2026-11-09-i megfigyelési dátummal, téma, platform, a látható reakció/komment/megosztás külön, és a konkrét posztlink, ha valóban megvan. Ha csak profillink van, jelölése **„Profil megnyitása”**; nem állítjuk, hogy posztlink. Forrásrészlet, kutatási dátum, bizonytalanság kinyitható.
+- „–” = nem volt megjelenítve / ismeretlen; „nem olvasható” = nem ellenőrzött. Egyik sem automatikus 0. Ha a forrás nem mondja ki, ne következtessünk nullára.
+- Egy november 9-én feljegyzett Elefánt, 2026-10-25-i „Néha meg kell állni…” fotós poszt **583 reakció, 14 hozzászólás, 20 megosztás**; ez forráspélda és kiugró megfigyelés, nem biztos következtetés. A posztot, a kontextust és lehetőleg a közvetlen linket ellenőrizni kell. Ne írjuk, hogy „bezárási poszt” vagy hogy sikert hozott, amíg ez nem igazolt.
+- Referenciaként szerepelhetnek a táblázatból más menü/szezonális/esemény posztok, mindig pontos adat és dátum mellett. Ne számoljunk engagement rate-et az elérés hiányában, és ne állítsuk, hogy a különböző időpontú posztok egymással egyenlő feltételek mellett versenyeztek.
+- A követőszám, reakció, komment, megosztás egymástól külön, és nem azonos eléréssel, forgalommal, foglalással, vásárlással vagy bevétellel. „Legsikeresebb” állítás csak az összehasonlítható mérés alátámasztásával.
+- Látható állapot: Meta Ad Library aktív hirdetések nem voltak megbízhatóan olvashatók; nem állítható, hogy nincs hirdetés. Nincs mért médiaköltés, reach, megjelenítés, foglalás, eladás vagy kampánymegtérülés.
+
+### 3. Vendégvélemények az étteremkártyákon
+
+- Az étterem profilján „Vélemények” kinyitható rész: platformonként külön értékelés + véleményszám + eredeti forrás / közvetítő aggregátor + az **adat eredeti dátuma** és **ellenőrzés dátuma**. Az eltérő platformok és források nem képeznek közös átlagot; a régebbi aggregátoradat nem „aktuális Google-érték”.
+- „A forrásban feljegyzett pozitív témák” és „További ellenőrzést igénylő panaszok” alatt rövid, étteremhez illesztett példák; az egyedi tapasztalat, keresési összefoglaló és teljes eredeti értékelés külön jelölve, forrás és dátum amennyiben van. Az Elefánt összesített terasz/helyszín témája dátum szerint nem lesz az elmúlt 12 hónap igazolt mintája.
+- Nem mintavételes adatból ne írjuk: „a legtöbben panaszkodnak”, „a vendégek ezt szeretik” vagy a megállapítás reprezentatív. Nem ismert szám = nem ismert. Az eltérő időszakok és beszerezhetőségi korlátok megmaradnak.
+
+### 4. „Elefánt újranyitása” – javaslatok és működtetés
+
+- A felhasználó céljára épülő, javaslatnak jelölt tartalomkártyák: zárás/újranyitás és nyitvatartás, Google Cégprofil, új séf, új étlap, heti menü, ételfotó és rövid videó, meghívásos tesztvacsora, nyitási kampány.
+- Minden kártya: **miért érdekes** (forrással alátámasztott megfigyelés, ha van), **javasolt lépés**, csatorna/formátum, szükséges anyag, felelős/határidő/jóváhagyás/állapot — ha nincs eldöntve, „Egyeztetendő”. A konkrét gyakoriság is javaslat és kapacitáshoz igazítandó, nem kész terv.
+- Ha később szerkeszthető állapotmező kerül bele, tároló, tulajdonos, megosztás és frissítés utáni megmaradás világos legyen; hamis mentésjelzés tilos. Addig statikus megbeszélési lista.
+
+### Adatforrás és fázisolás
+
+- Forráslapok: **Social and ads**, **Social live read 2026-11-09**, **Ratings 2026-11-09**, **Review themes**, plusz az éttermi törzs és források. Az egyezés étterem/profil/platform alapján ellenőrzendő, aliasok és külön üzletek kézzel felülvizsgálva. A november 9-i megfigyelés nem élő csatornaadat; a külön lapok frissessége és importideje eltérhet.
+- Az első megvalósítás előtt: az aktuális Sheet és a GitHub-pillanatkép ellenőrzése, másik munkakör frissítéseinek megőrzése, a vegyes importfrissesség javítása (P1). Olyan adatok kerüljenek ki, melyeknél az eredet és dátum megjeleníthető.
+- **P5a.1**: követőszámok és hiányok két platformon, étteremválasztó, forrás; **P5a.2**: dokumentált posztpéldák és Elefánt-kiemelés; **P5a.3**: értékelések és témák a versenytárskártyákban; **P5a.4**: nyitási lehetőségek és tartalomműködés. Mindegyik önmagában használható, tesztelt és önállóan commitolható.
+- Az új igényt tartsuk látható prioritásban: P0 működő GitHub-webcím és P1 megbízható aktuális adat/import után a P5a.1–2 előre hozható a meeting szempontjából, párhuzamosan a P2/P3-mal; P5a.3–4 ezután. A felhasználó kérésére itt csak a terv frissül, a UI megvalósítása későbbi lépés.
+- Elfogadási feltételek: minden mutató mellett platform és dátum, hiányzó érték kezelése, öt hely adatainak spotellenőrzése, Gusto-különbség és Oliva-közös profil jelölése, reakció/megtekintés keverésének kizárása, ismeretlen hirdetésstátusz, források megnyitása, telefonos nézet és szűrők ellenőrzése, a jelenlegi kalkulátorok/étlapnézetek regressziótesztje.
+
 ## P6 – Minőség, mobil, adatkarbantartás és automatikus frissítés [nyitott]
 
 - Kulcs képernyők telefonon, asztali böngészőben, billentyűzettel; szűrők, visszaállítás, nyitás, hibás vagy üres adatok, forráslinkek, adatdátum és regresszió ellenőrzése.
