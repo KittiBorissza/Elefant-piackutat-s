@@ -10,3 +10,10 @@
 - Egyes eredeti komponensek még indexalapúak, és a kutatási háttér nyers megjelenítése nem minden esetben őrzi meg az eredeti üres sorokat. A vizualizáció nem teljes ár- és tételnormalizálás, a hiányos összetevők kulcsszavas keresése csak közelítés.
 - Következő: meetingre rendezett nyitóoldal, ebédmenük összehasonlítása, versenytárskártyák, kalkulátorok és mobilos átvizsgálás. Részletes P2–P7 UX-feladatok még hátravannak.
 - A GitHub-forrás önmagában nem kapcsolódik a ChatGPT Site publikálásához; automatikus GitHub-telepítés nincs igazolva.
+
+## 2026-11-11 – meetingkezdő és ebédmenü
+
+- Új kérdésközpontú nyitóoldal és négy megbeszélési pont készült; megmaradt a kutatási háttér, a vizualizáció és a kalkulátor.
+- Az ebédmenüben külön két- és háromfogásos, csatorna- és ármód-szűrő, kártyás rangsor és kinyitható részletek működnek. A november 9-i Oliva és Skorpió ajánlatok a korábbi időszakoktól külön, forrásellenőrzést igénylő megfigyelésekként jelennek meg, végösszeg és csatorna igazolása nélkül.
+- Ellenőrizve: asztali előnézet, két- és háromfogásos váltás, árak és hiányzó díjak, forgatókönyv alapértéke, JavaScript szintaxis. Mobil böngészős ellenőrzés még szükséges.
+- Következő: éttermi versenytárskártyák, étlapok részletesebb összehasonlítása, kiszállítási modell javítása, mobilteszt. Az új nyitóoldal korlátozott megfigyeléseket mutat, nem végleges üzleti ajánlásokat.
