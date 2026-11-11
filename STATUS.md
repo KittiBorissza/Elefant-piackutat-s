@@ -1,5 +1,12 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Aktuális folytatási pont – GitHub-only (2026-11-11)
+
+- A korábbi ChatGPT Site elhagyott; csak a GitHub repó változik. Részletes, prioritásos terv: ROADMAP.md.
+- Az ebédmenü-árlap 32 megfigyeléssel frissült párhuzamos munkában; a többi adat korábbi kivonat. Közzétett GitHub dashboard URL nincs igazolva.
+- A gyökér index.html továbbvisz a dist/ alkalmazásba, ha a GitHub Pages main/root beállítás aktív. A Pages beállítása, publikációja és a működő URL még nem ellenőrzött; a feladat nincs kész.
+- Következő lépés: Pages-hozzáférés és kiadás ellenőrzése; utána a vegyes adatfrissesség, importvédelem és a friss ebédmenüsorok integrációjának alapos ellenőrzése. A munkát mindig aktuális main HEAD alapján folytasd.
+
 ## 2026-11-11 – ebédmenü árak frissítése
 
 - A Napi menü árak forráslap 32 ármegfigyelése került be; csak ez a munkalap frissült, a többi kutatási adat korábbi pillanatkép. A frissítés ideje külön szerepel a nyitóoldalon.
