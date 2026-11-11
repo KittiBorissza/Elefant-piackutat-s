@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Folytatási pont – importvédelem (2026-11-11)
+
+- A GitHub Pages várható címe böngészőben 404 (Site not found); a beállítási oldal az aktuális böngészőből nem elérhető, így a Pages konfigurációja nem ellenőrizhető vagy módosítható itt. A GitHub repó publikus és a gyökér index a dist/ könyvtárba mutat.
+- A scripts/import_snapshot.py most a teljes 47 oszlop nevét és sorrendjét ellenőrzi a meglévő dashboard-snapshot alapján, mert a felület pozíció szerint olvas. Eltérésnél import előtt leáll. Szintetikus XLSX-teszt: helyes fejléc sikeres, felcserélt fejléc elutasított, a korábbi kimenet változatlan.
+- A forrásadatok nem frissültek. Következő: Pages hozzáférés és beállítás main/root forrással, majd a nyilvános URL, adatok és interakciók ellenőrzése; P1-ben még hátra van a többfájlos import atomi cseréje és a Sheet frissességének ellenőrzése.
+
 ## Marketing és vélemények – tervezési mérföldkő (2026-11-11)
 
 - A ROADMAP.md P5a szakasza rögzíti a követőszámok, posztpéldák és vendégvélemények összehasonlító felületi tervét és külön megvalósítási lépéseit. A felhasználó pontosítása szerint a benchmark nem tartalmaz feladatlistát, kampánytervet vagy tartalomnaptárt. Ez terv; az új felületek még nincsenek megvalósítva.
