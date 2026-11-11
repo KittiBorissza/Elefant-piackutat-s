@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Importvédelem: staging (2026-11-11)
+
+- Az import több fájlt ír, ezért fájlonkénti csere nem atomi. Most a script elutasítja a nem üres célkönyvtárat; az éles dist/ közvetlen felülírása emiatt nem működik. Új staging könyvtárral indítható: `python scripts/import_snapshot.py export.xlsx --output /tmp/elefant-staging`. A staging tartalmának validált, egy commitban történő átvétele még külön feladat; nincs automatikus publikálás, teljes atomi adatcsere nem készült el.
+- Szintetikus XLSX: üres célra import sikeres, ismételt import elutasítva, kimeneti fájlok érintetlenek. Forrásadatot nem frissítettünk.
+- Következő: staging összevetése a tényleges Sheet-snapshot és a frissebb ebédadatok megőrzésével, atomi verzióváltás megtervezése; éles review-kiegészítés és mobilellenőrzés.
+
 ## Vélemények élő ellenőrzése és kontextusa (2026-11-11)
 
 - Az éles dashboardon a versenytárskártyák és a Chill értékelései, témái, dátumai és linkjei megjelentek. A kezdőlapon a 23 kétfogásos megfigyelés friss szövege is megjelent. A kártya kinyitását ellenőriztük; a forrásoldalak és mobil nem lettek átfogóan tesztelve.
