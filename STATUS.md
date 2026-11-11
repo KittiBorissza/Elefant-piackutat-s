@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## 2026-11-11 – ebédmenü árak frissítése
+
+- A Napi menü árak forráslap 32 ármegfigyelése került be; csak ez a munkalap frissült, a többi kutatási adat korábbi pillanatkép. A frissítés ideje külön szerepel a nyitóoldalon.
+- A menülistában csatornaszűrésnél Wolt és kiszállítás is választható; az érvényesség, a csatorna és az egyetemi jogosultság figyelmeztetése látható. A régi november 9-i külön gyűjtésből már nem adunk hozzá potenciálisan duplikált sorokat.
+- Az adatfrissítés továbbra is kézi; sem a Google Sheets, sem a GitHub nem frissíti automatikusan a privát ChatGPT Site-ot.
+
 ## 2026-11-11 – adatfrissítés és első UI-kör
 
 - Forrás: Google Sheets XLSX-export; a sikeres import pontos ideje a `dist/snapshot-meta.json` állományban.
