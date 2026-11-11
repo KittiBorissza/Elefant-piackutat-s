@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a Google Sheets XLSX export, then atomically replace the local snapshot."""
+"""Validate an XLSX export and write a snapshot into a new, empty staging directory."""
 import argparse,collections,datetime,json,os,tempfile
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -35,7 +35,10 @@ if set(central_ids)!=set(ids) or len(central_ids)!=len(ids):raise ValueError('Az
 # Preserve original values and sheet separation, including notes; normalize dates only.
 all_sheets={n:read(n) for n in w.sheetnames}
 meta={'imported_at':datetime.datetime.now(ZoneInfo('Europe/Budapest')).isoformat(timespec='seconds'),'source':'Google Sheets XLSX export','spreadsheet_id':'1eigqlKCEuAGTrBA-96k44CB51-EedJh_FJafi2lb_ww','worksheet_count':len(w.sheetnames),'price_observations':len(records),'sync':'manual_snapshot','column_mapping':indices}
-out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
+out=Path(args.output)
+# Never overwrite a previously published set: multiple file renames are not atomic.
+if out.exists() and any(out.iterdir()):raise ValueError('A célkönyvtár nem üres; adj meg új staging könyvtárat a --output kapcsolóval. Az éles fájlokat nem módosítottuk.')
+out.mkdir(parents=True,exist_ok=True)
 payloads={'research.json':all_sheets,'data0.json':all_sheets['Éttermek'],'data1.json':flow,'data2.json':all_sheets['Napi menü árak'],'data3.json':all_sheets['Pizzériák'],'snapshot-meta.json':meta}
 # Validate every output in memory before replacing files.
 encoded={name:json.dumps(data,ensure_ascii=False,separators=(',',':'),allow_nan=False) for name,data in payloads.items()}
