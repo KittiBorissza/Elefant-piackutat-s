@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Teljes munkalap-összevetés (2026-11-11)
+
+- Az 22:16-os staging és a repó research.json mind a 35 lapját összevetettük. 33 közös lap változatlan; a research.json-ba mentett Napi menü árak régebbi (11 sor), de az alkalmazás ezt külön betöltött data2.json-nal felülírja (32 sor); az új exportban 32 sor szerepel. Az új 35. lap: Ebédmenü kutatási brief (15 adatsor).
+- Az éttermi, étlap-adatfolyam- és pizzériaadatok külön JSON-fájljaiban azonos fejléc, azonosítók és sorok; az ebédadatok korábbi összevetésében csak elhanyagolható lebegőpontos különbség. A snapshotot még nem vettük át, a GitHubban együttes commit / böngészős verzióvédelem továbbra sincs megvalósítva. Az új munkalap és ebédlap így a research.json nyers nézetében jelenleg régi vagy hiányzik.
+- Következő: több fájl egyetlen commitban történő biztonságos átvétele a legfrissebb main megtartásával; verziók keveredését a böngészős lekérésnél is kezelni kell, majd ellenőrizni a közzétételt.
+
 ## Friss Sheet-export és ebédadatok összevetése (2026-11-11)
 
 - A Google Sheet friss XLSX-exportja külön stagingbe importálva: 35 lap, 585 adatfolyam-ármegfigyelés; az import ellenőrzései átmentek. A dashboard adatai még nem változtak, az export staging nem tartós repófájl.
