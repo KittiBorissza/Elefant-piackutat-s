@@ -1,5 +1,12 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Marketingbenchmark első lépése (2026-11-11)
+
+- A Marketingbenchmark menüpontban Facebook- és Instagram-követők összehasonlítása öt vizsgált profilra, forrással, dátummal, hiányokkal és az Oliva közös profiljára vonatkozó megjegyzéssel. A korábbi nyitási feladatkártyák helyét a kért benchmark vette át; a nyers forráslapok továbbra is megnyithatók.
+- A Social and ads és Social live read lapokból a mentett pillanatkép adatait olvassa; nem élő kapcsolat. Külön Instagram-megfigyelést akkor vesz át, amikor az első forrásban nincs szám. Fricska hiányzó száma nem nulla. Node ellenőrzés: JS szintaxis, részletes érték, másodlagos forrás és hiányzó érték. Élő oldali és mobilos ellenőrzés még szükséges.
+- A forrástábla metaadata most 35 munkalapot mutat; a teljes korábbi snapshot 34 lapos, az ebédárak külön frissebbek. A Napi menü árak lapon 32 rekord látható, de teljes egyezőség és további lapok változásai nem lettek ellenőrizve. A lap neveinek és a social két forrásnak célzott beolvasása megtörtént.
+- Következő: a benchmark telepítésének böngészős ellenőrzése és mobilpróba; P1 teljes frissítés/importbiztonság, majd forrásolt posztpéldák és véleménytémák.
+
 ## Ebédösszesítő javítás és élő ellenőrzés (2026-11-11)
 
 - A kezdőlap korábban megtévesztően két, dátum alapján kiválasztott megfigyelést nevezett a november 9-i gyűjtésnek. Most a teljes betöltött kétfogásos ármegfigyeléseket számlálja, jelezve az eltérő csatornákat, időszakokat és ismétlődő helyeket. Szintetikus adatokkal és üres adattal, valamint JavaScript-szintaxissal ellenőrizve; a friss publikáció böngészős ellenőrzése még szükséges.
