@@ -59,20 +59,20 @@ Minden szakasz után:
 - Kapacitásmodell: megrendelések, kapacitás, csúcs, elviteli arány, kiszorítás; az előkészítési idő hatása csak ha a modellt alátámasztják az adatok. Túlkapacitáskor ne ígérjen teljesítést, egyébként explicit figyelmeztetés.
 - Azonos rendelésállomány, számítási bázis és korlátozás értelmezése dokumentált, próbaszámolásokkal ellenőrzött.
 
-## P5 – Versenytársak, értékelések, marketing és megvalósítás [részben kész]
+## P5 – Versenytársak, értékelések és marketingbenchmark [részben kész]
 
 - Az öt előzetes étteremkártya meglévő, de a források október-novemberi megfigyelések: működés, ár, távolság és csatorna frissessége ellenőrizendő. Nem talált nem jelent nem létezőt.
 - Platformonként külön pontszám + véleményszám, idő és eredet; nincs összemosott átlag. Témák és forrásolt példák; gyakoriság csak megfelelő mintával.
 - A közeli és távolabbi versenytársak szűrése, pozicionálási következtetések jelölése.
-- Marketing és nyitás: séf, étlap, nyitvatartás, Google Cégprofil, heti menü, forgatás és meghívásos tesztvacsora. Felelős, dátum, jóváhagyás csak ha ténylegesen megvan; szerkesztésnél tárolás és megmaradás jelezve.
+- Marketingbenchmark: kizárólag a rendelkezésre álló versenytársi közösségimédia-adatok és dokumentált tartalmak vizualizálása. Feladatlista, kampányterv és tartalomnaptár nem része ennek a nézetnek.
 - Befejezéskor megbeszélésre nyomtatható döntéslista.
 
 ## P5a – Marketing és vendégvélemények: UI-terv [megtervezve, nincs megvalósítva]
 
 ### Helye a navigációban
 
-- A jelenlegi, hétpontos főmenüben az „Újranyitás” átnevezhető „Marketing és nyitás”-ra, megtartva a meglévő feladatokat és interakciókat. A menüponton belül két jól látható alfül: **„Mit csinálnak mások?”** és **„Elefánt újranyitása”**. A menü címét mobilon is tesztelni kell; ha nem fér, rövidebb „Marketing” cím megengedett.
-- A vendégvélemények elsődleges helye a **Versenytársak** oldalon az adott étterem kártyája. Egy kapcsolódó **„Mit szeretnek a vendégek?”** összefoglaló a Marketing és nyitás oldalról is elérhető. Közös adatmodellre mutassanak; ugyanazt a véleményt nem tároljuk vagy számoljuk kétszer.
+- A marketing-összehasonlítás önálló, **„Marketingbenchmark”** nevű, könnyen megtalálható nézet legyen. Éttermenként mutassa a dokumentált csatornákat, követőszámokat és posztpéldákat, világos szűrőkkel. Újranyitási feladatlista, kampányterv vagy tartalomnaptár nem része e fejlesztésnek. A meglévő funkciókat önkényesen ne töröljük; az új benchmark ne keveredjen a feladatokkal.
+- A vendégvélemények elsődleges helye a **Versenytársak** oldalon az adott étterem kártyája. Egy kapcsolódó **„Mit olvastunk a véleményekben?”** összefoglaló a marketingbenchmarkból is elérhető. Közös adatmodellre mutassanak; ugyanazt a véleményt nem tároljuk vagy számoljuk kétszer.
 - Az Áttekintés oldalon legfeljebb egy rövid, forrással, dátummal és korláttal ellátott marketinges megfigyelés vagy az Elefánt kiugró posztja jelenjen meg, **„Megnézem a kommunikációt”** gombbal. A tulajdonosi döntések és ebédmenük továbbra is elsőbbséget kapnak.
 
 ### 1. „Mit csinálnak mások?” – követők
@@ -98,18 +98,12 @@ Minden szakasz után:
 - „A forrásban feljegyzett pozitív témák” és „További ellenőrzést igénylő panaszok” alatt rövid, étteremhez illesztett példák; az egyedi tapasztalat, keresési összefoglaló és teljes eredeti értékelés külön jelölve, forrás és dátum amennyiben van. Az Elefánt összesített terasz/helyszín témája dátum szerint nem lesz az elmúlt 12 hónap igazolt mintája.
 - Nem mintavételes adatból ne írjuk: „a legtöbben panaszkodnak”, „a vendégek ezt szeretik” vagy a megállapítás reprezentatív. Nem ismert szám = nem ismert. Az eltérő időszakok és beszerezhetőségi korlátok megmaradnak.
 
-### 4. „Elefánt újranyitása” – javaslatok és működtetés
-
-- A felhasználó céljára épülő, javaslatnak jelölt tartalomkártyák: zárás/újranyitás és nyitvatartás, Google Cégprofil, új séf, új étlap, heti menü, ételfotó és rövid videó, meghívásos tesztvacsora, nyitási kampány.
-- Minden kártya: **miért érdekes** (forrással alátámasztott megfigyelés, ha van), **javasolt lépés**, csatorna/formátum, szükséges anyag, felelős/határidő/jóváhagyás/állapot — ha nincs eldöntve, „Egyeztetendő”. A konkrét gyakoriság is javaslat és kapacitáshoz igazítandó, nem kész terv.
-- Ha később szerkeszthető állapotmező kerül bele, tároló, tulajdonos, megosztás és frissítés utáni megmaradás világos legyen; hamis mentésjelzés tilos. Addig statikus megbeszélési lista.
-
 ### Adatforrás és fázisolás
 
 - Forráslapok: **Social and ads**, **Social live read 2026-11-09**, **Ratings 2026-11-09**, **Review themes**, plusz az éttermi törzs és források. Az egyezés étterem/profil/platform alapján ellenőrzendő, aliasok és külön üzletek kézzel felülvizsgálva. A november 9-i megfigyelés nem élő csatornaadat; a külön lapok frissessége és importideje eltérhet.
 - Az első megvalósítás előtt: az aktuális Sheet és a GitHub-pillanatkép ellenőrzése, másik munkakör frissítéseinek megőrzése, a vegyes importfrissesség javítása (P1). Olyan adatok kerüljenek ki, melyeknél az eredet és dátum megjeleníthető.
-- **P5a.1**: követőszámok és hiányok két platformon, étteremválasztó, forrás; **P5a.2**: dokumentált posztpéldák és Elefánt-kiemelés; **P5a.3**: értékelések és témák a versenytárskártyákban; **P5a.4**: nyitási lehetőségek és tartalomműködés. Mindegyik önmagában használható, tesztelt és önállóan commitolható.
-- Az új igényt tartsuk látható prioritásban: P0 működő GitHub-webcím és P1 megbízható aktuális adat/import után a P5a.1–2 előre hozható a meeting szempontjából, párhuzamosan a P2/P3-mal; P5a.3–4 ezután. A felhasználó kérésére itt csak a terv frissül, a UI megvalósítása későbbi lépés.
+- **P5a.1**: követőszámok és hiányok két platformon, étteremválasztó, forrás; **P5a.2**: dokumentált posztpéldák és Elefánt-kiemelés; **P5a.3**: értékelések és témák a versenytárskártyákban és összefoglalójuk a benchmarkból. Mindegyik önmagában használható, tesztelt és önállóan commitolható.
+- Az új igényt tartsuk látható prioritásban: P0 működő GitHub-webcím és P1 megbízható aktuális adat/import után a P5a.1–2 előre hozható a meeting szempontjából, párhuzamosan a P2/P3-mal; P5a.3 ezután. A felhasználó kérésére itt csak a terv frissül, a UI megvalósítása későbbi lépés.
 - Elfogadási feltételek: minden mutató mellett platform és dátum, hiányzó érték kezelése, öt hely adatainak spotellenőrzése, Gusto-különbség és Oliva-közös profil jelölése, reakció/megtekintés keverésének kizárása, ismeretlen hirdetésstátusz, források megnyitása, telefonos nézet és szűrők ellenőrzése, a jelenlegi kalkulátorok/étlapnézetek regressziótesztje.
 
 ## P6 – Minőség, mobil, adatkarbantartás és automatikus frissítés [nyitott]
