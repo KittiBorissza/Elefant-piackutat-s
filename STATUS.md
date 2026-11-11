@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Ebédösszesítő javítás és élő ellenőrzés (2026-11-11)
+
+- A kezdőlap korábban megtévesztően két, dátum alapján kiválasztott megfigyelést nevezett a november 9-i gyűjtésnek. Most a teljes betöltött kétfogásos ármegfigyeléseket számlálja, jelezve az eltérő csatornákat, időszakokat és ismétlődő helyeket. Szintetikus adatokkal és üres adattal, valamint JavaScript-szintaxissal ellenőrizve; a friss publikáció böngészős ellenőrzése még szükséges.
+- Élő oldalon ellenőrizve: kétfogásosról háromfogásosra szűrés (23-ról 5 megfigyelés), ebédkalkulátor 4000 Ft/35% mellett 2600 Ft, kiszállítási alapmodell és nullás kapacitás figyelmeztetés. Mobil és többi interakció nincs átfogóan tesztelve. A Sheet aktuális állapotát ez a kör nem ellenőrizte.
+- Következő: közzétett javítás ellenőrzése; forrástábla és vegyes adatsnapshot összevetése, importbiztonság, majd marketingbenchmark.
+
 ## GitHub Pages elérhető (2026-11-11)
 
 - A https://kittiborissza.github.io/Elefant-piackutat-s/ böngészőben átirányít a dist/ dashboardra; a nyitóoldal és a kutatási adatok betöltődtek. A felület nyilvános. Az összes funkció, mobilnézet, kiszállítási módosítás és az éppen publikált commit azonossága még nem ellenőrzött.
