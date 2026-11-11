@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Vélemények élő ellenőrzése és kontextusa (2026-11-11)
+
+- Az éles dashboardon a versenytárskártyák és a Chill értékelései, témái, dátumai és linkjei megjelentek. A kezdőlapon a 23 kétfogásos megfigyelés friss szövege is megjelent. A kártya kinyitását ellenőriztük; a forrásoldalak és mobil nem lettek átfogóan tesztelve.
+- A véleménykártyákhoz hozzáadtuk a forrássorban lévő kutatási összefoglalót és bizonytalansági megjegyzést; ez megelőzi a vegyes időpontú kritikák félreértelmezését. A módosítás szintaxisát és a kontextus megjelenését tesztadatokkal ellenőriztük. Éles közzététele még nincs igazolva; a szöveg részben angol forrásadat.
+- Következő: új kontextus ellenőrzése a Pages oldalon, majd mobilvizsgálat és a P1 forrásfrissesség és többfájlos import kérdése.
+
 ## Versenytársak: véleménytémák (2026-11-11)
 
 - A versenytárskártyákhoz kinyitható értékelés- és témarész került, a mentett Ratings 2026-11-09 és Review themes lapokból, pontos étteremnév-aliasokkal. Platform/forrás, érték, véleményszám, eredeti adat ideje vagy megjegyzése, ellenőrzés dátuma, link és témák polaritása látszik; az aggregátorok nem élő értékelések és a témapéldák nem reprezentatívak. Hiányzó kapcsolatok külön jelölve.
