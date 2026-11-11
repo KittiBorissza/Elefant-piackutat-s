@@ -1,5 +1,10 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## GitHub Pages elérhető (2026-11-11)
+
+- A https://kittiborissza.github.io/Elefant-piackutat-s/ böngészőben átirányít a dist/ dashboardra; a nyitóoldal és a kutatási adatok betöltődtek. A felület nyilvános. Az összes funkció, mobilnézet, kiszállítási módosítás és az éppen publikált commit azonossága még nem ellenőrzött.
+- Következő: a fontos interakciók és a mobilnézet ellenőrzése; utána P1 adatfrissesség és import, majd P5a marketingbenchmark. A Sheet nem élő kapcsolat.
+
 ## Folytatási pont – kiszállítási hibajavítás (2026-11-11)
 
 - A felhasználó képernyőképe alapján a Pages beállítása Deploy from a branch, main és /(root); az első építés folyamatban volt. Az ismételt böngészős ellenőrzésnél az URL továbbra is 404. A beállítás helyessége látható, sikeres publikáció nincs igazolva; a telepítés hibáját vagy folyamatát ellenőrizni kell.
