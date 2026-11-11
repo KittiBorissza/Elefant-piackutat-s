@@ -39,7 +39,7 @@ out=Path(args.output)
 # Never overwrite a previously published set: multiple file renames are not atomic.
 if out.exists() and any(out.iterdir()):raise ValueError('A célkönyvtár nem üres; adj meg új staging könyvtárat a --output kapcsolóval. Az éles fájlokat nem módosítottuk.')
 out.mkdir(parents=True,exist_ok=True)
-payloads={'research.json':all_sheets,'data0.json':all_sheets['Éttermek'],'data1.json':flow,'data2.json':all_sheets['Napi menü árak'],'data3.json':all_sheets['Pizzériák'],'snapshot-meta.json':meta}
+payloads={'research.json':all_sheets,'data0.json':all_sheets['Éttermek'],'data1.json':flow,'data2.json':all_sheets['Napi menü árak'],'data3.json':all_sheets['Pizzériák'],'snapshot-meta.json':meta,'snapshot-bundle.json':{'meta':meta,'research':all_sheets}}
 # Validate every output in memory before replacing files.
 encoded={name:json.dumps(data,ensure_ascii=False,separators=(',',':'),allow_nan=False) for name,data in payloads.items()}
 for name,content in encoded.items():
