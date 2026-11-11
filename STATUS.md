@@ -1,5 +1,11 @@
 # Elefánt Piackép – fejlesztési állapot
 
+## Versenytársak: véleménytémák (2026-11-11)
+
+- A versenytárskártyákhoz kinyitható értékelés- és témarész került, a mentett Ratings 2026-11-09 és Review themes lapokból, pontos étteremnév-aliasokkal. Platform/forrás, érték, véleményszám, eredeti adat ideje vagy megjegyzése, ellenőrzés dátuma, link és témák polaritása látszik; az aggregátorok nem élő értékelések és a témapéldák nem reprezentatívak. Hiányzó kapcsolatok külön jelölve.
+- A forráslapok élő tartalma és szerkezete célzottan ellenőrizve; a dashboard továbbra is régi mentett snapshotot használ, nem történt Sheet-import. JS-szintaxis és szintetikus teszt pozitív/negatív hozzárendelésre, dátumokra/hiányokra részben sikerült. Éles telepítés, valódi adatokkal és mobilon történő böngészős ellenőrzés hátra van.
+- Következő: Pages friss commit publikációjának ellenőrzése, kártyák megnyitása/források vizsgálata, mobil; majd adatfrissítés és import atomi biztonsága.
+
 ## Marketingbenchmark éles ellenőrzés (2026-11-11)
 
 - A felhasználó képernyőképe szerint a f256672 commit Pages buildje sikerült, deploy akkor még folyamatban volt. Ezután az élő dashboardon megjelent a Marketingbenchmark, mindkét követőlista és a posztpéldák. A Chill étteremre szűrés böngészőben működött, a forráslapok lenyithatók. Mobilnézet és szűrő visszaállítása még ellenőrzendő.
